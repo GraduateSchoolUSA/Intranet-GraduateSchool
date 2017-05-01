@@ -1,0 +1,56 @@
+#header {
+  background: $blue;
+  a {
+    color: white;
+  }
+  .contextual {
+    a {
+      color: $black;
+    }
+  }
+}
+
+.page-top {
+  background: $black;
+  padding: 10px 0;
+}
+
+.region-top-menu {
+  ul {
+    @include zero;
+  }
+  li {
+    @include zero;
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+  }
+  .menu {
+    float: right;
+  }
+}
+
+.branding {
+  min-height: 125px;
+  @include display-table;
+  color: white;
+  .site-branding {
+    float: none;
+    clear: both;
+    text-align: center;
+    @include font-size(12px);
+    @include bp-medium {
+      text-align: left;
+      min-width: 10em;
+      .site-logo {
+        float: left;
+        margin-right: 1em;
+      }
+      .site-name{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        @include font-size(30px);
+        font-weight: 300;
+      }
+    }
+  }
+}
